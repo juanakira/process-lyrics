@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Resultados</h1>
+    <p><strong>Letra de la canción:</strong></p>
+    <p>{{ lyrics }}</p>
+    <p><strong>Estructura de la canción:</strong></p>
+    {% for i in range(len(sections)) %}
+        <div style="background-color: {{ colors[i] }};">
+            <p>{{ sections[i] }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
